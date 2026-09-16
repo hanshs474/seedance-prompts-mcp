@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.hanshs474/seedance-prompts-mcp",
+  "description": "Search, audit and compose AI video prompts — 150 of them, each rendered into a real video",
+  "repository": {
+    "url": "https://github.com/hanshs474/seedance-prompts-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "websiteUrl": "https://emaki.ai/prompt?utm_source=mcp-registry",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "seedance-prompts-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

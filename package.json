@@ -1,14 +1,38 @@
 {
   "name": "seedance-prompts-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server with 150 AI video prompts that were each rendered into a real video with Seedance 2 — search, inspect, audit and compose prompts, with the example video for every one.",
+  "mcpName": "io.github.hanshs474/seedance-prompts-mcp",
   "type": "module",
-  "bin": { "seedance-prompts-mcp": "src/index.js" },
+  "bin": {
+    "seedance-prompts-mcp": "src/index.js"
+  },
   "main": "src/index.js",
-  "files": ["src", "README.md", "LICENSE"],
-  "keywords": ["mcp", "modelcontextprotocol", "mcp-server", "ai-video", "video-generation", "prompts", "prompt-engineering", "seedance", "text-to-video", "image-to-video"],
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "mcp-server",
+    "ai-video",
+    "video-generation",
+    "prompts",
+    "prompt-engineering",
+    "seedance",
+    "text-to-video",
+    "image-to-video"
+  ],
   "license": "MIT",
   "homepage": "https://emaki.ai/prompt?utm_source=npm",
-  "repository": { "type": "git", "url": "git+https://github.com/hanshs474/seedance-prompts-mcp.git" },
-  "engines": { "node": ">=18" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanshs474/seedance-prompts-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
