@@ -4,8 +4,12 @@
 full text in English and Japanese, watch the clip the prompt produced, audit your own draft
 against what the rendered prompts specify, or compose a new one — all from your MCP client.
 
-Most "prompt library" packages ship prompts nobody ran. Every prompt here has a rendered video
-behind it, and every result carries the source URL where you can watch it.
+Most "prompt library" packages ship prompts nobody ran, so you find out what a prompt does only
+after you spend a generation on it. Here the clip came first: every entry links to the video that
+this exact text produced, and the audit tool measures your draft against all 150 of them rather
+than against someone's opinion of good prompting.
+
+Add it to your client with the two lines below, then ask it to find you a prompt.
 
 ## Install
 
@@ -64,7 +68,7 @@ AI video site running Seedance 2 and Seedance 2.5. Each entry there has the prom
 and the resulting clip. 32 of the 150 are image-to-video prompts that show how to address
 multiple reference images (`@Image1`, `@Image2`) — the part that is hardest to guess.
 
-Run any of them in the browser: [text to video](https://emaki.ai/video?utm_source=npm) ·
+Pick a prompt and run it in the browser: [text to video](https://emaki.ai/video?utm_source=npm) ·
 [image to video](https://emaki.ai/image-to-video?utm_source=npm) ·
 [Seedance 2.5](https://emaki.ai/seedance-2-5?utm_source=npm) (up to 30 seconds with audio in one pass).
 
