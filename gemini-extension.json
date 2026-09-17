@@ -1,0 +1,12 @@
+{
+  "name": "seedance-prompts",
+  "version": "1.0.1",
+  "description": "Search 150 AI video prompts that were each rendered into a real video, get the clip each prompt produced, audit a draft prompt against all 150, or compose a new one.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "seedance-prompts": {
+      "command": "npx",
+      "args": ["-y", "seedance-prompts-mcp"]
+    }
+  }
+}
