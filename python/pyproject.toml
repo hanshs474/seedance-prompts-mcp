@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seedance-prompts-mcp"
+version = "1.0.1"
+description = "MCP server: 150 AI video prompts each rendered into a real video — search, inspect, audit and compose, with the example clip for every one."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["mcp", "model-context-protocol", "mcp-server", "ai-video", "video-generation", "prompts", "prompt-engineering", "seedance", "text-to-video", "image-to-video"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+]
+
+[project.urls]
+Homepage = "https://emaki.ai/prompt?utm_source=pypi"
+Repository = "https://github.com/hanshs474/seedance-prompts-mcp"
+
+[project.scripts]
+seedance-prompts-mcp = "seedance_prompts_mcp:main"
+
+[tool.setuptools]
+packages = ["seedance_prompts_mcp"]
+
+# prompts.json は src/prompts.json から publish 時にコピーする(同じデータを二重管理しない)
+[tool.setuptools.package-data]
+seedance_prompts_mcp = ["prompts.json"]

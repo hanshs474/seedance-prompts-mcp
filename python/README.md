@@ -13,18 +13,22 @@ Add it to your client with the two lines below, then ask it to find you a prompt
 
 ## Install
 
-Node 18+. No dependencies, no API key, no network access at runtime — the prompt set is bundled.
+Python 3.9+. Standard library only — no dependencies, no API key, no network access at runtime,
+because the prompt set is bundled.
 
 ```json
 {
   "mcpServers": {
     "seedance-prompts": {
-      "command": "npx",
-      "args": ["-y", "seedance-prompts-mcp"]
+      "command": "uvx",
+      "args": ["seedance-prompts-mcp"]
     }
   }
 }
 ```
+
+There is an identical Node build on npm (`npx -y seedance-prompts-mcp`) if that suits your setup
+better — same tools, same data.
 
 Claude Desktop: `claude_desktop_config.json`. Cursor: `.cursor/mcp.json`. Any other stdio MCP
 client takes the same two lines.
@@ -63,22 +67,15 @@ get_prompt({ slug: "perfume-product-advertisement-generation-prompt-for-seedance
 
 ## Where the prompts come from
 
-They are the public prompt library of [Emaki](https://emaki.ai/prompt?utm_source=npm), a Japanese
+They are the public prompt library of [Emaki](https://emaki.ai/prompt?utm_source=pypi), a Japanese
 AI video site running Seedance 2 and Seedance 2.5. Each entry there has the prompt, the settings
 and the resulting clip. 32 of the 150 are image-to-video prompts that show how to address
 multiple reference images (`@Image1`, `@Image2`) — the part that is hardest to guess.
 
-Pick a prompt and run it in the browser: [text to video](https://emaki.ai/video?utm_source=npm) ·
-[image to video](https://emaki.ai/image-to-video?utm_source=npm) ·
-[Seedance 2.5](https://emaki.ai/seedance-2-5?utm_source=npm) (up to 30 seconds with audio in one pass).
+Pick a prompt and run it in the browser: [text to video](https://emaki.ai/video?utm_source=pypi) ·
+[image to video](https://emaki.ai/image-to-video?utm_source=pypi) ·
+[Seedance 2.5](https://emaki.ai/seedance-2-5?utm_source=pypi) (up to 30 seconds with audio in one pass).
 
 ## License
 
 MIT. The prompt texts are published by Emaki for reuse; the example videos stay on Emaki's CDN.
-
-## Python build
-
-The same server for `uvx` users lives on PyPI as
-[`seedance-prompts-mcp`](https://pypi.org/project/seedance-prompts-mcp/) — same five tools, same
-bundled prompts, standard library only. Source is in `python/`; the prompt data is copied from
-`src/prompts.json` at publish time so the two builds cannot drift apart.
